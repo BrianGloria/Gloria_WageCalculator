@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/employeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Employee Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/employeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="@+id/employeeName"
+        app:layout_constraintStart_toStartOf="@+id/employeeName"
+        app:layout_constraintTop_toBottomOf="@+id/employeeName" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Type:" />
+
+        <RadioButton
+            android:id="@+id/btnFullTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full-time" />
+
+        <RadioButton
+            android:id="@+id/btnPartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part-time" />
+
+        <RadioButton
+            android:id="@+id/btnProbationary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Probationar" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="CALCULATE"
+        app:layout_constraintEnd_toEndOf="@+id/employeeHours"
+        app:layout_constraintStart_toStartOf="@+id/employeeHours"
+        app:layout_constraintTop_toBottomOf="@+id/employeeHours" />
+
+    <EditText
+        android:id="@+id/employeeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:text="Hours Rendered"
+        app:layout_constraintEnd_toEndOf="@+id/employeeType"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/employeeType"
+        app:layout_constraintTop_toBottomOf="@+id/employeeType" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

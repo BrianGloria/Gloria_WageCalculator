@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display">
+
+    <TextView
+        android:id="@+id/txtEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:id="@+id/txtEmployeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Employee Type:"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployeeName"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
+
+    <TextView
+        android:id="@+id/txtHoursRendered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Hours Rendered:"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployeeType"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeType" />
+
+    <TextView
+        android:id="@+id/txtTotalWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Total Wage"
+        app:layout_constraintStart_toStartOf="@+id/txtHoursRendered"
+        app:layout_constraintTop_toBottomOf="@+id/txtHoursRendered" />
+</androidx.constraintlayout.widget.ConstraintLayout>
